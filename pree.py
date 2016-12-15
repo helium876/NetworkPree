@@ -52,12 +52,12 @@ class NetworkPree:
 				print FAIL + "MAC SPOOFED, Possible MITM ATTACK" + ENDC
 	def main(self):
 		interface_list = netifaces.interfaces()
-		print BLUE + "|   _  \.-----|  |_.--.--.--.-----.----|  |--.   |   _   |   _   |   _   |   _   |" + ENDC
- 		print BLUE + "|.  |   |  -__|   _|  |  |  |  _  |   _|    <    |.  1   |.  l   |.  1___|.  1___|" + ENDC
- 		print BLUE + "|.  |   |_____|____|________|_____|__| |__|__|   |.  ____|.  _   |.  __)_|.  __)_ " + ENDC
- 		print BLUE + "|:  |   |                                        |:  |   |:  |   |:  1   |:  1   |" + ENDC
- 		print BLUE + "|::.|   |                                        |::.|   |::.|:. |::.. . |::.. . |" + ENDC
- 		print BLUE + "`--- ---'                                        `---'   `--- ---`-------`-------'" + ENDC
+		print BLUE + " _   _      _                      _      ____                 " + ENDC
+		print BLUE + "| \ | | ___| |___      _____  _ __| | __ |  _ \ _ __ ___  ___  " + ENDC
+		print BLUE + "|  \| |/ _ \ __\ \ /\ / / _ \| '__| |/ / | |_) | '__/ _ \/ _ \ " + ENDC
+		print BLUE + "| |\  |  __/ |_ \ V  V / (_) | |  |   <  |  __/| | |  __/  __/ " + ENDC
+		print BLUE + "|_| \_|\___|\__| \_/\_/ \___/|_|  |_|\_\ |_|   |_|  \___|\___| " + ENDC
+
  		print HEADER + BOLD + "Select Interface to Pree" +ENDC
  		for x in interface_list:
  			print str(interface_list.index(x)) + " " + x
